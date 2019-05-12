@@ -8,13 +8,13 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <h1>
-        Rozpocznij swój własny biznes.
+        Skyrocket Your Conversions
         </h1>
 
-        <p>"Programowanie w świecie Minecraft" to niesamowite i pasjonujące zajęcia, które uczą programowania w języku angielskim w przystępnej formie!  </p>
+        <p>Truely increases trust, traffic, and sales with smart reviews.</p>
 
         <button onClick={scrollToContent} aria-label="scroll">
-          Więcej
+          Start free trial
         </button>
       </section>
 
@@ -35,9 +35,13 @@ const Hero = props => {
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
 
+          h1 {
+            max-width: 540px;
+            margin: 0 auto 40px;
+          }
           p {
             color: #fff;
-            max-width: 540px;
+            max-width: 340px;
             font-weight: 500;
             margin: 0 auto 40px;
             text-align: center;
@@ -96,7 +100,7 @@ const Hero = props => {
           background: transparent;
           border: 1px solid #fff;
           color: #fff;
-          font-family: Geomanist;
+          font-family: Coiny;
           padding: 13px 34px;
           font-size: 13px;
           font-weight: 400;

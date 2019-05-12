@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Nienudno.pl - franczyza", // <title>
-  shortSiteTitle: "Nienudno.pl", // <title> ending for posts and pages
-  siteDescription: "Programowanie w świecie Minecraft. Rozpocznij własny biznes.",
+  siteTitle: "Truely", // <title>
+  shortSiteTitle: "Truely", // <title> ending for posts and pages
+  siteDescription: "Smart reviews for your e-commerce.",
   siteUrl: "https://nienudno.netlify.com",
   // pathPrefix: "",
   siteImage: "./images/jpg/robots.jpg",
@@ -12,12 +12,12 @@ module.exports = {
   authorTwitterAccount: "spozapudelka.pl",
 
   /* info */
-  headerTitle: "Nienudno.pl - Franczyza",
-  headerSubTitle: "Programowanie w świecie Minecraft",
+  headerTitle: "Truely",
+  headerSubTitle: "Smart reviews",
 
   /* manifest.json */
-  manifestName: "Nienudno.pl - franczyza",
-  manifestShortName: "Nienudno.pl", // max 12 characters
+  manifestName: "Truely",
+  manifestShortName: "Truely", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",
   manifestThemeColor: "#666",

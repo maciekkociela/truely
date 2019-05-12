@@ -40,10 +40,10 @@ class Header extends React.Component {
             <div className="logo">
               <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} />
             </div>
-            <div className="type">
+            {/* <div className="type">
               <h1 className="type-main">{config.headerTitle}</h1>
               <h2>{config.headerSubTitle}</h2>
-            </div>
+            </div> */}
           </Link>
           <FontLoadedContext.Consumer>
             {loaded => (
@@ -119,9 +119,11 @@ class Header extends React.Component {
             margin: 0;
           }
 
+          
+
           .logo {
             display: inline-block;
-            height: 25px;
+            height: 43px;
             width: 146px;
             margin: ${theme.space.inline.default};
             overflow: hidden;
@@ -132,7 +134,7 @@ class Header extends React.Component {
             }
 
             img {
-              min-height: 25px;
+              min-height: auto;
               width: 100%;
             }
           }

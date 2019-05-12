@@ -1,10 +1,11 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+/* @font-face {
     font-family: 'geomanist';
     src: url('geomanist-bold-webfont.woff2') format('woff2'),
          url('geomanist-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-
 }
 
 @font-face {
@@ -31,4 +32,4 @@
          url('geomanist-light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-}
+} */

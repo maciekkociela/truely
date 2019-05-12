@@ -142,8 +142,8 @@ class Layout extends React.Component {
                         margin: 0;
                         padding: 0;
                       }
-                      body {
-                        font-family: Geomanist, sans-serif;
+                      body, button {
+                        font-family: Coiny, sans-serif !important;
                       }
                       h1,
                       h2,
@@ -153,11 +153,19 @@ class Layout extends React.Component {
                         letter-spacing: -0.03em;
                         margin: 0;
                       }
+                      button {
+                        padding: 10px;
+                      }
+                      .containerBox {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 20px;
+                      }
                       h1 {
                         letter-spacing: -0.04em;
                       }
                       article h1 {
-                        color: #005495;
+                        color: #31bfbd;
                         font-size: 36px !important;
                         letter-spacing: 0.04em;
                         font-weight: 600;
@@ -176,15 +184,15 @@ class Layout extends React.Component {
                         color: #666;
                       }
                       a.activeItem {
-                        color: #005495 !important;
+                        color: #31bfbd !important;
                       }
                       main {
                         width: auto;
                         display: block;
                       }
                       a.button {
-                        background: #005495;
-                        border: 1px solid #005495;
+                        background: #31bfbd;
+                        border: 1px solid #31bfbd;
                         border-radius: 0;
                         text-transform: none;
                         opacity: 0.9;
@@ -193,21 +201,82 @@ class Layout extends React.Component {
                         color: #fff !important;
                         display: inline-block;
                         margin-top: 20px;
-                        transition: .2s;
+                        transition: 0.2s;
                         font-weight: 400 !important;
                         text-decoration: none !important;
                         cursor: pointer;
 
                         :hover {
-                          border-color: #005495;
+                          border-color: #31bfbd;
                           background: transparent;
-                          color:  #005495 !important;
+                          color: #31bfbd !important;
                         }
                       }
 
-                      
-                    
+                      article {
+                        max-width: 800px;
+                        padding: 10px;
+                        margin: 50px auto;
+                        p {
+                          font-size: 1.1em;
+                          line-height: 1.6;
+                          margin: 0 0 1.5em;
+                          color: #545454;
+                        }
+                        h1 {
+                          margin: 0.3em 0 0.8em;
+                        }
 
+                        &.article {
+                          padding: 180px 10px 140px;
+                          margin: 0 auto;
+                          z-index: 2;
+                          position: relative;
+
+                          h1,
+                          p,
+                          h3 {
+                            color: #fff;
+                            max-width: 405px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                            position: relative;
+                            z-index: 3;
+                          }
+
+                          h1 {
+                            margin-bottom: 10px;
+                          }
+
+                          h3 {
+                            font-weight: 600;
+                            margin-top: 0.8em;
+                          }
+                        }
+                      }
+
+                      .heading {
+                        color: #31bfbd;
+                        font-size: 36px !important;
+                      }
+
+                      .svgDevider {
+                        width: 15px;
+                        display: inline-block;
+                      }
+
+                      .flex {
+                        display: flex;
+
+                        .flexColumn {
+                          width: 50%;
+                          margin: 0 40px;
+                          @media (max-width: 800px) {
+                            width: 100%;
+                            margin: 0 10px;
+                          }
+                        }
+                      }
                     `}</style>
                   </React.Fragment>
                 </ScreenWidthContext.Provider>

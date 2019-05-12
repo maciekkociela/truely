@@ -1,43 +1,40 @@
 import React from "react";
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
-const ContactBlock = props => {
+import hiring from "../../images/png/hiring.png"
+import Analytics from "../../images/svg-icons/analysis.svg"
+
+
+const Summary = props => {
+  const { scrollToContent, backgrounds, theme } = props;
 
   return (
     <React.Fragment>
       <section className="blocks">
+      <div style={{textAlign: "center", marginBottom: 50}}>
+        <h1 className="heading">Quick summary</h1>
+      </div>
+      
         <div className="row">
+        
             <div className="column">
-                <h3>Telefon</h3>
-                <p>Zadzwoń i dowiedz się więcej o naszej ofercie.</p>
+            
+                <h3>how do I calculate the ROI?</h3>
+                <p> our dashboard does that automatically. you can also run an A/B test.</p>
                 <div>
-                <a className="button" href="tel:507-07-07-27">
-                507-07-07-27
-                </a>
                 </div>
             </div>
             <div className="column">
-                <h3>E-mail</h3>
-                <p>Napisz, aby otrzymać prezentacje pdf z ofertą franczyzową.</p>
-                    <a className="button" href="mailto:kontakt@nienudno.pl">
-                kontakt@nienudno.pl
-                </a>
+                <h3>do I have to know how to code?</h3>
+                <p>Our widget is extramly easy to use. No coding needed.
+</p>
             </div>
             <div className="column">
-                <h3>Strona internetowa</h3>
-                <p>Przyczytaj więcej o naszej firmie na nienudno.pl.
+                <h3>what is social proof marketing?</h3>
+                <p>nobody cares what you say about your business. social proof marketing is when customers sell for you.
+
                 </p>
-                <a target="_blank" className="button" href="https://nienudno.pl">
-                    nienudno.pl
-                </a>
-            </div>
-            <div className="column">
-                <h3>Facebook</h3>
-                <p>Poznaj nas lepiej dzięki naszym social mediom.
-                </p>
-                <a target="_blank" className="button" href="https://facebook.com/nienudnopl">
-                    facebook.com/nienudnopl
-                </a>
             </div>
         </div>
       </section>
@@ -91,12 +88,23 @@ const ContactBlock = props => {
               width: calc(25% - 60px);
             }
         }
+
+        .flex {
+            display: flex;
+
+            .flexColumn {
+              width: 50%;
+              @media (max-width: 800px) {
+                width: 100%;
+              }
+            }
+          }
       `}</style>
     </React.Fragment>
   );
 };
 
-ContactBlock.propTypes = {
+Summary.propTypes = {
 };
 
-export default ContactBlock;
+export default Summary;
