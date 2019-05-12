@@ -97,8 +97,8 @@ const Hero = props => {
         }
 
         button {
-          background: transparent;
-          border: 1px solid #fff;
+          background: #31bfbd;
+          border: 1px solid #31bfbd;
           color: #fff;
           font-family: Coiny;
           padding: 13px 34px;
